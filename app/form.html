@@ -1,0 +1,140 @@
+<!Doctype html>
+   <html>
+   <head>
+     <meta charset="utf-8">
+     <meta content="text/html">
+     <meta lang="ru">
+     <title>Бриф на разработку веб-сайта</title>
+   </head>
+ <body>
+    <h2 align="center">Бриф на разработку веб-сайта</h2>
+      <form action="#" method="post">
+         <fieldset>
+             <legend>Ваши контактные данные</legend>
+               <div>
+                  <label>
+                      Ваше имя <input type="text" name="name" placeholder="ivanov ivan" required> 
+                  </label>
+               </div>
+               <div>
+                 <label>
+                     Телефон<input type="tel" name="tel" required>  
+                </label>
+              </div>
+              <div>
+                 <label>
+                    Электронная почта<input type="email" name="post" placeholder="ivanov@mail.ru" required>  
+                </label>
+             </div>
+         </fieldset>
+         <fieldset>
+             <legend>Информация о Вашей компании</legend>
+               <div>
+                   <label>
+                       Название<input type="text" name="company" required>
+                   </label>
+               </div>
+               <div>
+                   <label>Миссия и слоган<textarea type="textarea" name="production" rows="1" cols="60" maxlength="60"></textarea></label>
+               </div>
+               <div>
+                   <label>Логотип<input type="file" name="logo" enctype="multipart/form-data"></label>
+               </div>
+               <div>
+                   <label>
+                       Фирменные цвета<input type="color" name="brand">
+                   </label>
+               </div>
+               <div>
+                   <label>
+                       Сфера деятельности<textarea type="textarea" name="activity" rows="1" cols="50"></textarea>
+                   </label>
+               </div>
+               <div>    
+                   <label>
+                       География реализации товаров и услуг<textarea type="textarea" name="location" rows="1" cols="50"></textarea>
+                   </label>
+               </div>
+               <div>
+                   <label>
+                       Основные товары и услуги компании<textarea type="textarea" name="production" rows="2" cols="60"></textarea>
+                   </label>
+               </div>
+         </fieldset>
+         <fieldset>
+             <legend>Информация о конкурентах</legend>
+               <div>
+                  <label>Основной конкурент <input type="text" name="rival">
+                  </label>
+               </div>
+               <div>
+                   <label>Веб-ресурс конкурента<input type="text" name="link-rival" placeholder="Введите ссылку на сайт конкурента">
+               </label>
+               </div>
+         </fieldset>
+         <fieldset>
+             <legend>Информация о потребителях</legend>
+                 <p>Пол потребителя</p>
+                     <label>Женский<input type="checkbox" name="sex" value="Женский">
+                     </label>
+                     <label>Мужской<input type="checkbox" name="sex" value="Женский">
+                   </label>
+                 <p>Возраст потребителя</p>
+                    <select name="old" size="2" multiple>
+                        <option value="1">16-25</option>
+                        <option value="2">26-35</option>
+                        <option value="3">36-45</option>
+                        <option value="4">46-55</option>
+                        <option value="5">56-65</option>
+                        <option value="6">65 и более</option>
+                    </select>
+                 <p>Средний ежемесячный доход потребителя</p>
+                     <label>15-20 т.р.<input type="radio" name="income" value="15-25 т.р.">
+                     </label>
+                     <label>26-35 т.р.<input type="radio" name="income" value="26-35 т.р.">
+                     </label>
+                     <label>36-50 т.р.<input type="radio" name="income" value="36-50 т.р.">
+                     </label>
+                     <label>51-80 т.р.<input type="radio" name="income" value="51-80 т.р.">
+                     </label>
+                     <label>81 т.р и более<input type="radio" name="income" value="81 т.р и более">
+                     </label>
+            </fieldset>
+          <fieldset>
+             <legend>Задачи веб-сайта</legend>
+               <div>
+                  <label>Какой эффект ожидается от веб-сайта <textarea type="textarea" name="effect" rows="2" cols="60"></textarea>
+                  </label>
+               </div>
+               <div>
+                   <p>Тип разрабатываемого проекта</p>
+                     <label>Визитка<input type="checkbox" name="type" value="Визитка">
+                      </label>
+                       <label>Корпоративный сайт<input type="checkbox" name="type" value="Корпоративный сайт">
+                      </label>
+                     <label>Инфорамционный портал<input type="checkbox" name="type" value="Инфорамционный портал">
+                    </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                  <legend>Завершение проекта</legend>
+                    <div>
+                     <label>Предполагаемое время сдачи веб-сайта
+                        <input type="date" name="calendar">
+                     </label>
+                    </div>
+              </fieldset>
+               <fieldset>    
+                   <div>
+                     <input type="submit" value="Отправить бриф">
+                  </div>
+                  <div>
+                      <button type="submit" value="Зарегестрироваться">Зарегестрироваться</button>
+                  </div>
+                  <div>
+                      <button type="reset" value="Очистить бриф">Очистить бриф</button>
+                  </div>
+               </fieldset>
+        </form>
+     </body>
+ </html>
