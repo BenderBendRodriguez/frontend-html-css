@@ -1,87 +1,83 @@
-.body {
-    background: #fff;
+@import url(grid.css);
+body {
+    background: #FCFAF8;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
-.navigation {
+nav {
     background: #F4F2F0;
-    border: 1px solid #706D6B;
-    border-radius: 8px;
+    border: #706D6B;
+    border-style: none;
+    border-radius: 10px;
     list-style: none; 
-    margin: 0em;
+    margin: -0.25em 0;
     padding: 0;
     text-align: center;
 }
 
-.navigation li {
+li {
     color: #fff;
     display: inline-block;
     margin: 1em 0;
 }
 
-.navigation li a:hover {
-    color: #706D6B;
+li a:hover {
+    color: #B2A595;
 }
 
-.navigation a {
+a {
     color: #000;
     display: block;
     font-weight: bold;
-    padding: 1em 2em;
+    padding: 0.5em 2em;
     text-decoration: none;
 }
 
-.h2 {
+h2 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
     color: #706D6B;
     text-align: center;
     margin: 1em 0; 
     padding: 0;
 }
-
-
-.fieldset {
-    background: #FCFAF8;
-    border-color: #F4E9DC;
-    border-radius: 10px;
-    border-style: inset;
-    padding: 1em;
-}
-
-.label{
-    padding: 0.5em 1em;
+h4 {
     font-family: Arial, Helvetica, sans-serif;
-    color: #737373;
-    font-size: 1em;
-    
-}
-
-.label.float{
-    float: left;
+    font-size: 1.2em;
+    color: #B2A595;
+    text-align: left;
+    margin: 1.4em 0.9em; 
     padding: 0;
+}
+
+form{
+    margin: 0 20em 0;
+    max-width: 750px;
+}
+fieldset {
+    border: 2px solid#706D6B;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding: 1em 0.75em;
+}
+
+label{
+    padding: 1em 1em;
     font-family: Arial, Helvetica, sans-serif;
     color: #737373;
     font-size: 1em;
-    margin: -0.3em 0;
     
 }
-.fieldset input {
-    box-shadow: 0 0 1px;
+
+fieldset input, textarea{
+    border: 0.14em solid #DCC6AC;
     clear: both;
     padding: 0.25em 0.5em;
-    margin: 0.4em 1em;
+    margin: 0.6em 1em;
     vertical-align: middle;
 }
 
-.fieldset textarea {
-    padding: 0.25em 0.5em;
-    margin: 0.4em 1em;
-    vertical-align: bottom;
-    box-shadow: 0 0 1px;
-    clear: both;
-    vertical-align: middle;
-}
 .section {
     color: #737373;
     font-family: Arial, Helvetica, sans-serif;
@@ -89,8 +85,41 @@
     padding: 0;
     text-align: left;
 }
-.p {
+p {
     color: #737373;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 1em -0.1em;
+    margin: 0.4em -0.1em;
+    padding: 0 1em;
+    font-size: 1em;
+}
+
+.button {
+    background: #fff;
+    color: #737373;
+    border: 0.14em solid #DCC6AC;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 5px 43px;
+}
+.button:hover {
+    background-color: #DCC6AC;
+}
+
+.logo {
+    margin: 0;
+    width: 80px;
+    height: auto;
+    padding: 0 1em;
+}
+.tel {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #b3003e;
+    padding: 1em 7.8em;
+    border: none;
+    vertical-align: bottom;
+    width: 100%;
+}
+.wrapper {
+    margin: 0 auto;
 }

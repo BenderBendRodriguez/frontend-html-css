@@ -7,161 +7,178 @@
      <title>Бриф на разработку веб-сайта</title>
      <link rel="stylesheet" href="css/style.css">
    </head>
- <body class="body">
+ <body>
     <header>
-         <nav class="navigation">
+         <nav class="nav">
            <ul>
-             <li><a href="/index.html">Feel Fit</a></li>
-             <li><a href="/servesing.html">Услуги</a></li>
-             <li><a href="/contacts.html">Контакты</a></li>
-             <li><a href="/form.html">Форма</a></li>
+             <li><a href="/index.html">О компании</a></li>
+             <li><a href="/servesing.html">Что мы делаем</a></li>
+             <li><a href="/contacts.html">Связаться с нами</a></li>
+             <li><a href="/form.html">Заполнить бриф</a></li>
            </ul>
          </nav>
         </header>
-    <h2 class="h2">Бриф на разработку веб-сайта</h2>
+    <h2>Бриф на разработку веб-сайта</h2>
       <form action="#" method="post">
           <section class="section">
               <h4>Ваши контактные данные</h4>
           </section>
-              <fieldset class="fieldset">
-               <div>
-                  <label class="label float">
-                      Ваше имя <input type="text" name="name" placeholder="ivanov ivan" required> 
-                  </label>
+              <fieldset>
+               
+                  <label for="user">Ваше имя </label>
+                  <div><input id="user" type="text" name="name" placeholder="ivanov ivan" required>
                </div>
-               <div>
-                 <label class="label float">
-                     Телефон<input type="tel" name="tel" required>  
-                </label>
+               
+                 <label for="phone">Телефон</label>
+                <div><input id="phone" type="tel" name="tel" required>
               </div>
-              <div>
-                 <label label class="label float">
-                    Электронная почта<input type="email" name="post" placeholder="ivanov@mail.ru" required>  
+              
+                 <label for="mail" label>Электронная почта  
                 </label>
+                <div><input id="mail" type="email" name="post" placeholder="ivanov@mail.ru" required>
              </div>
          </fieldset>
              <section class="section">
                  <h4>Информация о Вашей компании</h4>
              </section>
          <fieldset class="fieldset label">
-               <div>
-                   <label>
-                       Название<input type="text" name="company" required>
-                   </label>
+                   <label for="name">Название</label>
+                       <div><textarea id="name" type="text" name="company" required rows="2" cols="50" maxlength="50"></textarea>
+                      </div>
+               
+                   <label for="mission">Миссия и слоган</label>
+                   <div>
+                       <textarea id="mission" type="textarea" name="production" rows="2" cols="50" maxlength="50"></textarea>
+                  </div>
+               
+                   <label for="sphere"> Сфера деятельности</label>
+                   <div><textarea id="sphere" type="textarea" name="activity" rows="2" cols="50" maxlength="50"></textarea>
                </div>
-               <div>
-                   <label>Миссия и слоган<textarea type="textarea" name="production" rows="1" cols="60" maxlength="50"></textarea></label>
+                   
+                   <label for="geo">География реализации товаров и услуг</label>
+                   <div><textarea id="geo" type="textarea" name="location" rows="2" cols="50" maxlength="50"></textarea>
                </div>
-               <div>
-                   <label>Логотип<input type="file" name="logo" enctype="multipart/form-data"></label>
-               </div>
-               <div>
-                   <label>
-                       Фирменные цвета<input type="color" name="brand">
-                   </label>
-               </div>
-               <div>
-                   <label>
-                       Сфера деятельности<textarea type="textarea" name="activity" rows="1" cols="50"></textarea>
-                   </label>
-               </div>
-               <div>    
-                   <label>
-                       География реализации товаров и услуг<textarea type="textarea" name="location" rows="1" cols="50"></textarea>
-                   </label>
-               </div>
-               <div>
-                   <label>
-                       Основные товары и услуги компании<textarea type="textarea" name="production" rows="2" cols="50"></textarea>
-                   </label>
+               
+                   <label for="gift">Основные товары и услуги компании</label>
+                   <div><textarea id="gift" type="textarea" name="production" rows="2" cols="50" maxlength="50"></textarea>
                </div>
          </fieldset>
              <section class="section">
                  <h4>Информация о конкурентах</h4>
              </section>
-         <fieldset class="fieldset">
-               <div>
-                  <label class="label float">Основной конкурент <input type="text" name="rival">
-                  </label>
+         <fieldset class="fieldset label">
+               
+                  <label for="zlo">Основные конкуренты</label>
+                   <div><textarea id="zlo" type="textarea" name="rival" rows="2" cols="50" maxlength="50"></textarea>
                </div>
-               <div>
-                   <label class="label float">Веб-ресурс конкурента<input type="text" name="link-rival" placeholder="Введите ссылку на сайт конкурента">
-               </label>
+                   <label for="zlo2" >Веб-ресурсы конкурентов </label>
+                   <div><textarea id="zlo2" type="text" name="link-rival" rows="2" cols="50" maxlength="50"></textarea>
+              
                </div>
          </fieldset>
              <section class="section">
                  <h4>Информация о потребителях</h4>
              </section>
          <fieldset class="fieldset label">
-                 <p class="p">Пол потребителя</p>
-                     <label>Женский<input type="checkbox" name="sex" value="Женский">
-                     </label>
-                     <label>Мужской<input type="checkbox" name="sex" value="Женский">
-                   </label>
-                 <p class="p">Возраст потребителя</p>
-                    <select name="old" size="2" multiple>
-                        <option value="1">16-25</option>
-                        <option value="2">26-35</option>
-                        <option value="3">36-45</option>
-                        <option value="4">46-55</option>
-                        <option value="5">56-65</option>
-                        <option value="6">65 и более</option>
-                    </select>
-                 <p class="p">Средний ежемесячный доход потребителя</p>
-                     <label>15-20 т.р.<input type="radio" name="income" value="15-25 т.р.">
-                     </label>
-                     <label>26-35 т.р.<input type="radio" name="income" value="26-35 т.р.">
-                     </label>
-                     <label>36-50 т.р.<input type="radio" name="income" value="36-50 т.р.">
-                     </label>
-                     <label>51-80 т.р.<input type="radio" name="income" value="51-80 т.р.">
-                     </label>
-                     <label>81 т.р и более<input type="radio" name="income" value="81 т.р и более">
+                <p class="p">Пол потребителя</p>
+                     <input id="femeil" type="checkbox" name="sex" value="Женский">
+                         <label for="femeil">Женский
+                         </label>
+                       </br>
+                     <input id="mail" type="checkbox" name="sex" value="Женский">
+                         <label for="male" >Мужской
+                         </label>
+                <p class="p">Средний ежемесячный доход потребителя</p>
+                     <input id="15" type="radio" name="income" value="15-25 т.р.">
+                         <label for="15">15-20 т.р.
+                         </label>
+                       </br>
+                     <input id="26" type="radio" name="income" value="26-35 т.р.">
+                         <label for="26">26-35 т.р.
+                         </label>
+                       </br>
+                     <input id="36" type="radio" name="income" value="36-50 т.р."> 
+                         <label id="36">36-50 т.р.
+                         </label>
+                       </br>
+                     <input id="51" type="radio" name="income" value="51-80 т.р.">
+                         <label for="51">51-80 т.р.
+                         </label>
+                         </br>
+                     <input id="81" type="radio" name="income" value="81 т.р и более">
+                     <label for="81">81 т.р и более
                      </label>
             </fieldset>
                 <section class="section">
                     <h4>Задачи веб-сайта</h4>
                 </section>    
             <fieldset class="fieldset label">
-               <div>
-                  <label>Какой эффект ожидается от веб-сайта <textarea type="textarea" name="effect" rows="2" cols="60"></textarea>
-                  </label>
+               
+                  <label for="magic" >Какой эффект ожидается от веб-сайта</label> 
+                  <div>
+                  <textarea id="magic" type="textarea" name="effect" rows="2" cols="50"></textarea>
                </div>
                <div>
-                   <p class="p">Тип разрабатываемого проекта</p>
-                     <label>Визитка<input type="checkbox" name="type" value="Визитка">
-                      </label>
-                       <label>Корпоративный сайт<input type="checkbox" name="type" value="Корпоративный сайт">
-                      </label>
-                     <label>Инфорамционный портал<input type="checkbox" name="type" value="Инфорамционный портал">
-                    </label>
+                   <label for="type" >Какой тип веб-сайта необходимо разработать</label> 
+                  <div>
+                  <textarea id="type" type="textarea" name="effect" rows="2" cols="50"></textarea>
+               </div> 
+                   
                 </div>
               </fieldset>
                   <section class="section">
                       <h4>Завершение проекта</h4>
                   </section>
               <fieldset class="fieldset label">
-                    <div>
-                     <label>Предполагаемое время сдачи веб-сайта
-                        <input type="date" name="calendar">
-                     </label>
+                    
+                     <label for="finish">Предполагаемое время сдачи веб-сайта</label>
+                     <div>
+                        <textarea id="finish" type="textarea" name="calendar" rows="2" cols="50"></textarea>
+                     
                     </div>
               </fieldset>
               <br>
               <fieldset class="fieldset">    
                  <div class="label float">  
                    <div>
-                       <input type="submit" value="Отправить бриф">
-                  </div>
-                  <div>
-                       <button type="submit" value="Зарегестрироваться">Зарегестрироваться</button>
-                  </div>
-                  <div>
-                       <button type="reset" value="Очистить бриф">Очистить бриф</button>
+                       <button type="submit" class="button" value="Отправить бриф">Отправить бриф</button>
+                  
+                  
+                       <button type="submit" class="button" value="Зарегестрироваться">Зарегестрироваться</button>
+                  
+                  
+                       <button type="reset" class="button" value="Очистить бриф">Очистить бриф</button>
                   </div>
                 </div>
              </fieldset>
                <br>
          </form>
+     
+     
+     <div class="wrapper">
+    <div class="row">
+        <div class="col-12">Col-12</div>
+        <div class="row">
+            <div class="col-3 offset-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sint quod nulla, quasi aperiam similique aliquid. Sit quae sed expedita libero laudantium tenetur recusandae ipsam doloribus veritatis quia, ipsa nesciunt.
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque impedit accusamus vitae, nemo, inventore saepe nam harum perspiciatis assumenda, ea tenetur earum laboriosam laudantium qui quas commodi cumque odio praesentium.</div>
+        <div class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae natus in blanditiis expedita dicta. Sunt cupiditate ex similique, dolorem, ad, necessitatibus nemo illum alias sed maiores non, ratione. Qui, cupiditate?</div>
+        <div class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quisquam, necessitatibus optio illum explicabo minus iure ea asperiores ducimus, animi numquam, praesentium impedit excepturi ad temporibus deleniti unde doloribus quasi.</div>
+    </div>
+    
+    <div class="row">
+        <div class="col-6">Col-6</div>
+        <div class="col-6">Col-6</div>
+    </div>
+    
+ 
+
+</div>
      </body>
  </html>
